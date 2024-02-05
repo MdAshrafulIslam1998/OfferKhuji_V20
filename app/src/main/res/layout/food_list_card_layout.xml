@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginBottom="6dp"
+    android:layout_weight="1"
+    android:backgroundTint="@color/white"
+    android:visibility="visible"
+    app:cardCornerRadius="9dp"
+    >
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="2"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_weight="1">
+
+
+            <ImageView
+                android:id="@+id/food_list_image"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/slider_kacchi"
+                android:scaleType="centerCrop"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/cupon_gradient" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="2"
+                android:orientation="horizontal"
+
+                >
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <TextView
+                        android:id="@+id/food_list_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginBottom="10dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/adornoirrit_bold"
+                        android:maxLines="1"
+                        android:text="Sultans Dine"
+                        android:textColor="@color/white"
+                        android:textSize="23dp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <TextView
+                        android:id="@+id/food_list_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/food_ranking_circle"
+                        android:fontFamily="@font/adornoirrit_bold"
+                        android:gravity="center"
+                        android:text="30"
+                        android:textColor="#DAFFFFFF"
+                        android:textSize="18dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/food_list_offer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="25dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/adornoirrit_bold"
+                    android:gravity="right"
+                    android:maxLines="2"
+                    android:text="50% off"
+                    android:textColor="@color/appred"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+
+                    app:layout_constraintStart_toStartOf="@+id/guideline2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/food_list_rating"
+                    android:layout_width="72dp"
+                    android:layout_height="26dp"
+                    android:layout_marginLeft="16dp"
+                    android:background="@drawable/corner_button2"
+                    android:backgroundTint="@color/appred"
+                    android:fontFamily="@font/adornoirrit_semibold"
+                    android:text="রেটিং: ৪.৪"
+                    android:textColor="@color/white"
+                    android:textSize="13dp"
+                    app:layout_constraintBottom_toTopOf="@+id/food_list_count"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/food_list_type" />
+
+
+                <TextView
+
+                    android:id="@+id/food_list_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/adornoirrit_bold"
+                    android:gravity="left"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:maxLines="1"
+                    android:paddingLeft="2dp"
+                    android:text="⦿ ফাস্টফুড"
+                    android:textColor="@color/appred"
+                    android:textSize="13dp"
+                    app:layout_constraintBottom_toTopOf="@+id/food_list_rating"
+                    app:layout_constraintStart_toStartOf="@+id/food_list_rating"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+
+                    android:id="@+id/food_list_count"
+                    android:layout_width="141dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="8dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/adornoirrit_regular"
+                    android:gravity="left"
+                    android:maxLines="1"
+                    android:paddingLeft="2dp"
+                    android:text="রিভিউ দিয়েছেন 1800 জন"
+                    android:textColor="@color/appred"
+                    android:textSize="12dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline2"
+                    app:layout_constraintStart_toStartOf="@+id/food_list_rating"
+                    app:layout_constraintTop_toBottomOf="@+id/food_list_rating" />
+
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="156dp" />
+
+
+
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
+
+
+
+

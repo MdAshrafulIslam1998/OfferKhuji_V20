@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Offer Khuji</string>
+
+    <string name="mirpur">গুলশান</string>
+    <string name="gulshan">মিরপুর</string>
+    <string name="dhanmondi">ধানমন্ডি</string>
+    <string name="badda">বাড্ডা</string>
+    <string name="uttora">উত্তরা</string>
+    <string name="ajimpur">আজিমপুর</string>
+
+
+</resources>

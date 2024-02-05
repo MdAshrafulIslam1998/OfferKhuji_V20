@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="6dp"
+    app:cardMaxElevation="6dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true"
+    >
+
+    <!-- In the above cardview widget cardelevation property will give elevation to your card view
+        card corner radius will provide radius to your card view card background color will give
+        background color to your card view card max elevation will give the cardview maximum
+        elevation card prevent corner overlap will add padding to CardView on v20 and before to
+        prevent intersections between the Card content and rounded corners. Card use compact padding
+        will add padding in API v21+ as well to have the same measurements with previous versions -->
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!-- ImageVIew to display our Course Image -->
+        <ImageView
+            android:id="@+id/food_list_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="10dp"
+            android:contentDescription="@string/app_name"
+
+            android:src="@drawable/category_burger1" />
+
+        <!-- Text View to display Course Name -->
+
+        <!-- Text VIew to display Course Rating -->
+        <!-- Image used in present in drawable folder -->
+        <TextView
+            android:id="@+id/food_list_name"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="16dp"
+            android:textSize="18dp"
+            android:textColor="@color/appred"
+            android:fontFamily="@font/adornoirrit_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ফুড ডেলিভারি"
+            android:layout_toRightOf="@+id/food_list_image"/>
+
+        <TextView
+            android:id="@+id/food_list_offer"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/food_list_name"
+            android:layout_alignEnd="@id/food_list_name"
+            android:layout_marginStart="12dp"
+            android:layout_toEndOf="@+id/food_list_image"
+            android:ellipsize="end"
+            android:fontFamily="@font/biryani"
+            android:gravity="right"
+            android:maxLines="1"
+            android:text="সব অফার একসাথে"
+            android:textColor="@color/appred"
+            android:textSize="8dp" />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
