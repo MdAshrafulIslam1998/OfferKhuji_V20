@@ -4,6 +4,14 @@
 
 Welcome to the **Offer Khuji** app, your ultimate companion for discovering incredible food deals and exclusive coupon codes right at your fingertips! 🎉 In today's fast-paced world, finding the best value for your money can be a challenge, especially when it comes to dining out or ordering in. Offer Khuji aims to simplify this process, bringing you a curated selection of discounts and promotions from your favorite restaurants and food outlets. Whether you're craving a hearty meal, a quick snack, or a delightful dessert, our app ensures you never miss out on a fantastic offer. Get ready to save money and enjoy more delicious moments! 🥳
 
+
+---
+
+## 🖼️ Preview
+https://github.com/user-attachments/assets/85c39311-88ce-45f8-824a-82c44f719849
+
+
+
 ## 🌟 Features That Make Offer Khuji Shine
 
 Offer Khuji is packed with functionalities designed to enhance your food discovery and saving experience:
